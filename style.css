@@ -10,9 +10,6 @@ body {
   color: #1f2937;
 }
 
-/* =======================
-   HEADER
-======================= */
 header {
   background: #fff;
   padding: 20px 40px;
@@ -49,18 +46,12 @@ nav div:last-child img {
   cursor: pointer;
 }
 
-/* =======================
-   MAIN LAYOUT
-======================= */
 main {
   max-width: 1200px;
   margin: 30px auto;
   padding: 0 20px;
 }
 
-/* =======================
-   HERO SECTION
-======================= */
 main > section:first-of-type {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -76,11 +67,11 @@ main > section:first-of-type article {
   overflow: hidden;
 }
 
-main > section:first-of-type article {
+main > section:first-of-type article:first-child {
   background: linear-gradient(135deg, #3563e9, #1a3fd3);
 }
 
-main > section:first-of-type article {
+main > section:first-of-type article:last-child {
   background: linear-gradient(135deg, #54a6ff, #3563e9);
 }
 
@@ -111,11 +102,8 @@ main > section:first-of-type img {
   bottom: 10px;
   width: 220px;
 }
-*/
 
-/* =======================
-   SECTION HEADERS
-======================= */
+
 section header {
   display: flex;
   justify-content: space-between;
@@ -185,9 +173,7 @@ article ul {
   margin-bottom: 16px;
 }
 
-/* =======================
-   CARD FOOTER
-======================= */
+
 article footer {
   display: flex;
   justify-content: space-between;
@@ -260,7 +246,6 @@ footer ul li {
 }
 
 footer > p {
-  grid-column: 1 / -1;
   text-align: center;
   margin-top: 30px;
   font-size: 14px;
@@ -268,7 +253,7 @@ footer > p {
 }
 
 @media (max-width: 900px) {
-  */ main > section:first-of-type {
+ main > section:first-of-type {
     grid-template-columns: 1fr;
   }
 
