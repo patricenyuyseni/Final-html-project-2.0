@@ -262,7 +262,7 @@ footer > p {
     grid-template-columns: 1fr 1fr;
   }
   #first-type {
-    display: none;
+    /* display: none; */
   }
 #ese {
   /* display: none; */
