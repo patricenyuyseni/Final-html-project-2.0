@@ -1,27 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Website</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Car Rental</title>
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
+    <header class="head1">
       <div>
         <h1>MORENT</h1>
       </div>
-
       <nav>
         <div>
           <input type="text" placeholder="Search something here" />
         </div>
         <div>
-          <img src="assets/image/Like (4).png" alt="like" />
-          <img src="assets/image/Notification.png" alt="notification" />
-          <img src="assets/image/Settings.png" alt="setting" />
-          <img src="assets/image/Profil.png" alt="profil" />
+           <img src="assets/image/Like (3).png" alt="like" class="menu"/>
+           <img src="assets/image/Notification.png" alt="notification" class="menu"/>
+           <img src="assets/image/Settings.png" alt="setting" class="menu"/>
+          <img src="assets/image/Profil.png" alt="profile" />
         </div>
       </nav>
     </header>
@@ -29,35 +27,95 @@
       <section class="first-type">
         <article class="first-type-article">
           <h2>The Best Platform for Car Rental</h2>
-          <p id="ese">Ease of doing a car rental safely and reliably.</p>
+          <p>
+            Ease of doing a car rental safely and reliably. of course at a low
+            price
+          </p>
           <button>Rental Car</button>
-          <div>
-          <img src="assets/image/image 7.png" id="eseimg" alt="Car Image" />
-          </div>
+          <div><img src="assets/image/image 7.png" alt="Car Image" /></div>
         </article>
-
-        <article class="first-type-article" id="first-type">
+        <article class="first-type-article" id="car2">
           <h2>Easy way to rent a car at low price</h2>
-          <p>Providing cheap car rental services.</p>
-          <button>Rental Car</button>
+          <p>Providing cheap car rental services and cheap and comfortable facilities</p>
+          <button id="btn1">Rental Car</button>
           <div>
           <img src="assets/image/image 8.png" alt="Car Image" />
           </div>
         </article>
       </section>
+      <section class="booking-bar">
+        <div class="booking-card">
+          <div class="booking-type">
+            <input type="radio" name="trip" id="pick-up" checked  />
+            <label for="pickup">Pick - Up</label>
+          </div>
 
-    
+          <div class="booking-fields" >
+            <div class="field" >
+              <label >Locations</label>
+              <select >
+                <option>Select your city</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Date</label>
+              <select>
+                <option>select your date</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Time</label>
+              <select>
+                <option>select your time</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="swap-btn">&udarr;</div>
+
+        <div class="booking-card">
+          <div class="booking-type">
+            <input type="radio" name="trip" id="dropoff" />
+            <label for="dropoff">Drop - Off</label>
+          </div>
+
+          <div class="booking-fields">
+            <div class="field">
+              <label>Locations.</label>
+              <select>
+                <option>Select your city.</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Date.</label>
+              <select>
+                <option>select your time.</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Time.</label>
+              <select>
+                <option>select your time.</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section>
         <header>
           <h3>Popular Car</h3>
           <a href="#">View All</a>
         </header>
-
         <section>
           <article>
             <div>
               <h4>Koenigsegg</h4>
-
               <div>
                 <img src="assets/image/Like.png" alt="like" />
               </div>
@@ -65,51 +123,33 @@
             <div>
               <p>Sport</p>
             </div>
-
             <img src="assets/image/car.png" alt="Car Image" />
-
-            <ul>
-              <li>90L</li>
-              <li>Manual</li>
-              <li>2 People</li>
-            </ul>
-
+            <img src="assets/image/Spesification (1).png" alt="logo" />
             <footer>
               <p>$99.00 / day</p>
               <button>Rent Now</button>
             </footer>
           </article>
-
           <article>
             <div>
               <h4>Nissan GT-R</h4>
-
               <div>
                 <img src="assets/image/Like (3).png" alt="like" />
               </div>
-            </div>
+            </div >
             <div>
               <p>Sport</p>
-            </div>
-
-            <img src="assets/image/car (1).png" alt="Car Image" />
-
-            <ul>
-              <li>80L</li>
-              <li>Manual</li>
-              <li>2 People</li>
-            </ul>
-
+            </div >
+            <img src="assets/image/car (1).png" alt="Car-Image" />
+            <img src="assets/image/Spesification (2).png" alt="logos" />
             <footer>
-              <p>$80.00 / day</p>
-              <button>Rent Now</button>
-            </footer>
-          </article>
-
-          <article>
+              <p>$80.00 / day.</p>
+              <button>Rent Now.</button>
+            </footer >
+          </article >
+          <article >
             <div>
               <h4>Rolls-Royce</h4>
-
               <div>
                 <img src="assets/image/Like.png" alt="like" />
               </div>
@@ -117,15 +157,8 @@
             <div>
               <p>Sport</p>
             </div>
-
             <img src="assets/image/Car (2).png" alt="Car Image" />
-
-            <ul>
-              <li>70L</li>
-              <li>Manual</li>
-              <li>4 People</li>
-            </ul>
-
+            <img src="assets/image/Spesification (4).png" alt="logo" />
             <footer>
               <p>$96.00 / day</p>
               <button>Rent Now</button>
@@ -138,17 +171,10 @@
               <img src="assets/image/Like (3).png" alt="like" />
             </div>
             <div>
-              <p>Sport</p>
+              <p>Sport.</p>
             </div>
-
             <img src="assets/image/car (1).png" alt="Car Image" />
-
-            <ul>
-              <li>80L</li>
-              <li>Manual</li>
-              <li>2 People</li>
-            </ul>
-
+            <img src="assets/image/Spesification (3).png" alt="logo" />
             <footer>
               <p>$80.00 / day</p>
               <button>Rent Now</button>
@@ -156,18 +182,14 @@
           </article>
         </section>
       </section>
-
-      <!-- RECOMMENDATION CARS -->
       <section>
         <header>
           <h3>Recommendation Car</h3>
         </header>
-
         <section>
           <article>
             <div>
               <h4>All New Rush</h4>
-
               <div>
                 <img src="assets/image/Like.png" alt="like" />
               </div>
@@ -175,51 +197,16 @@
             <div>
               <p>SUV</p>
             </div>
-
             <img src="assets/image/Car (3).png" alt="Car Image" />
-
-            <ul>
-              <li>70L</li>
-              <li>Manual</li>
-              <li>6 People</li>
-            </ul>
-
+            <img src="assets/image/Spesification (5).png" alt="logo" />
             <footer>
               <p>$72.00 / day</p>
-              <button>Rent Now</button>
+              <button>Rent Now.</button>
             </footer>
           </article>
-
           <article>
             <div>
               <h4>CR - V</h4>
-
-              <div>
-                <img src="assets/image/Like.png" alt="like" />
-              </div>
-            </div>
-            <div>
-              <p>SUV</p>
-            </div>
-
-            <img src="assets/image/Car (4).png" alt="Car Image" />
-
-            <ul>
-              <li>80L</li>
-              <li>Manual</li>
-              <li>6 People</li>
-            </ul>
-
-            <footer>
-              <p>$80.00 / day</p>
-              <button>Rent Now</button>
-            </footer>
-          </article>
-
-          <article>
-            <div>
-              <h4>All New Terios</h4>
-
               <div>
                 <img src="assets/image/Like (3).png" alt="like" />
               </div>
@@ -227,25 +214,16 @@
             <div>
               <p>SUV</p>
             </div>
-
-            <img src="assets/image/Car (5).png" alt="Car Image" />
-
-            <ul>
-              <li>90L</li>
-              <li>Manual</li>
-              <li>6 People</li>
-            </ul>
-
+            <img src="assets/image/Car (4).png" alt="Car Image" />
+            <img src="assets/image/Spesification (6).png" alt="logo" />
             <footer>
-              <p>$74.00 / day</p>
+              <p>$80.00 / day</p>
               <button>Rent Now</button>
             </footer>
           </article>
-
           <article>
             <div>
-              <h4>CR - V</h4>
-
+              <h4>All New Terios</h4>
               <div>
                 <img src="assets/image/Like.png" alt="like" />
               </div>
@@ -253,27 +231,35 @@
             <div>
               <p>SUV</p>
             </div>
-
-            <img src="assets/image/Car (6).png" alt="Car Image" />
-
-            <ul>
-              <li>80L</li>
-              <li>Manual</li>
-              <li>6 People</li>
-            </ul>
-
+            <img src="assets/image/Car (5).png" alt="Car Image" />
+            <img src="assets/image/Spesification.png" alt="logo" />
             <footer>
-              <p>$80.00 / day</p>
+              <p>$74.00. / day</p>
               <button>Rent Now</button>
             </footer>
           </article>
+          <article>
+            <div>
+              <h4>CR -V</h4>
+              <div>
+                <img src="assets/image/Like (3).png" alt="like" />
+              </div>
+            </div>
+            <div>
+              <p>SUV</p>
+            </div>
+            <img src="assets/image/Car (6).png" alt="Car Image6" />
+            <img src="assets/image/Spesification (6).png" alt=" 1logo" />
+            <footer>
+              <p>$80.00 / day.</p>
+              <button>Rent Now.</button>
+            </footer>
+          </article>
         </section>
-
         <section>
           <article>
             <div>
               <h4>MGZX Exclusice</h4>
-
               <div>
                 <img src="assets/image/Like.png" alt="like" />
               </div>
@@ -281,51 +267,33 @@
             <div>
               <p>metchback</p>
             </div>
-
             <img src="assets/image/Car (7).png" alt="Car Image" />
-
-            <ul>
-              <li>70L</li>
-              <li>Manual</li>
-              <li>4 People</li>
-            </ul>
-
+            <img src="assets/image/Spesification (4).png" alt="logo" />
             <footer>
-              <p>$76.00 / day</p>
+              <p>$76.00/ day.</p>
               <button>Rent Now</button>
             </footer>
           </article>
-
           <article>
             <div>
-              <h4>New MGZS</h4>
-
+              <h4>New MGZS.</h4>
               <div>
-                <img src="assets/image/Like (3).png" alt="like" />
+                <img src="assets/image/Like (3).png" alt="like1" />
               </div>
             </div>
             <div>
               <p>SUV</p>
             </div>
-
-            <img src="assets/image/Car (8).png" alt="Car Image" />
-
-            <ul>
-              <li>80L</li>
-              <li>Manual</li>
-              <li>6 People</li>
-            </ul>
-
+            <img src="assets/image/Car (8).png" alt="Car Image8" />
+            <img src="assets/image/Spesification (6).png" alt="logo8" />
             <footer>
               <p>$80.00 / day</p>
               <button>Rent Now</button>
             </footer>
           </article>
-
           <article>
             <div>
               <h4>MGZX Excite</h4>
-
               <div>
                 <img src="assets/image/Like.png" alt="like" />
               </div>
@@ -333,25 +301,16 @@
             <div>
               <p>SUV</p>
             </div>
-
-            <img src="assets/image/Car (7).png" alt="Car Image" />
-
-            <ul>
-              <li>90L</li>
-              <li>Manual</li>
-              <li>6 People</li>
-            </ul>
-
+            <img src="assets/image/Car (7).png" alt="CarImage" />
+            <img src="assets/image/Spesification.png" alt="logo" />
             <footer>
               <p>$74.00 / day</p>
               <button>Rent Now</button>
             </footer>
           </article>
-
           <article>
             <div>
               <h4>New MGZS</h4>
-
               <div>
                 <img src="assets/image/Like (3).png" alt="like" />
               </div>
@@ -359,15 +318,8 @@
             <div>
               <p>SUV</p>
             </div>
-
-            <img src="assets/image/Car (8).png" alt="Car Image" />
-
-            <ul>
-              <li>80L</li>
-              <li>Manual</li>
-              <li>6 People</li>
-            </ul>
-
+            <img src="assets/image/Car (8).png" alt="CarImage" />
+            <img src="assets/image/Spesification (6).png" alt="logo" />
             <footer>
               <p>$80.00 / day</p>
               <button>Rent Now</button>
@@ -377,9 +329,7 @@
       </section>
       <button>show more cars</button>
     </main>
-
-    <!-- FOOTER -->
-    <footer>
+    <footer id="footer-end">
       <section>
         <h4>MORENT</h4>
         <p>
@@ -387,7 +337,6 @@
           business.
         </p>
       </section>
-
       <section>
         <h5>About</h5>
         <ul>
@@ -397,7 +346,6 @@
           <li>Business Relation</li>
         </ul>
       </section>
-
       <section>
         <h5>Community</h5>
         <ul>
@@ -407,7 +355,6 @@
           <li>Invite a friend</li>
         </ul>
       </section>
-
       <section>
         <h5>Socials</h5>
         <ul>
@@ -417,10 +364,9 @@
           <li>Facebook</li>
         </ul>
       </section>
-
       <p>©2024 MORENT. All rights reserved</p>
-      <p>privacy & policy</p>
-      <p>terms & conditions</p>
+      <p>privacy &amp policy</p>
+      <p>terms &amp conditions</p>
     </footer>
   </body>
 </html>
